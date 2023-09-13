@@ -1,0 +1,26 @@
+.overlay {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* .overlay {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+} */
+.overlay-container {
+  display: flex;
+  width: 100vh;
+  justify-content: space-between;
+  height: 747.2px;
+}
+
+.overlay-content-right {
+  height: 100%;
+  width: 250px;
+}
+.overlay-content-left {
+  height: 100%;
+}
