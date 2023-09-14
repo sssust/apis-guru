@@ -31,9 +31,14 @@ function App() {
         <Route exact path="/details/:name" element={<ProviderDetails />}></Route>
       </Routes>
 
-      {sidebar && <Sidebar sidebar={sidebar} allProviders={allProviders} onClose={() => setSidebar(!sidebar)} />}
+      <div className={sidebar ? "sidebar-nav active" : "sidebar-nav"}>
+        <Sidebar sidebar={sidebar} allProviders={allProviders} onClose={() => setSidebar(!sidebar)} />
+      </div>
 
-      {sidebar && <div className="sidebar-overlay" onClick={() => setSidebar(!sidebar)}></div>}
+      <div
+        className={sidebar ? "sidebar-overlay active" : "sidebar-overlay"}
+        onClick={() => setSidebar(!sidebar)}
+      ></div>
     </div>
   );
 }

@@ -24,20 +24,13 @@ const ProviderDetails = () => {
     }
   }, [params]);
   const imgUrl = providerDetails?.info?.["x-logo"]?.url;
-
-  const ImgOpt = styled.nav`
-    width: 120px;
-    height: 120px;
-    background: url(${imgUrl}), lightgray 50% / cover no-repeat;
-  `;
+  console.log("provider details : ", providerDetails);
   return (
     <>
       <div className="details-container">
         <div className="details-header">
           <div className="details-logo">
-            <ImgOpt>
-              <img width="120px" height="120px" src={imgUrl} alt="img" />
-            </ImgOpt>
+            <img width="120px" height="120px" src={imgUrl} alt="img" />
           </div>
           <div className="details-title">{providerDetails?.info?.title}</div>
         </div>
