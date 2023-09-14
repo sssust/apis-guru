@@ -24,7 +24,6 @@ const ProviderDetails = () => {
     }
   }, [params]);
   const imgUrl = providerDetails?.info?.["x-logo"]?.url;
-  console.log("provider details : ", providerDetails);
   return (
     <>
       <div className="details-container">
